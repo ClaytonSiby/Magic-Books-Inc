@@ -1,6 +1,6 @@
 # Magic Books Inc
 
-This application is built with real-world business specifications. It an app for a Germany fictional company *Magic Books Inc*, the application helps organize and manage the company's bookstore. It is a fast, dynamic app built with ReactJs and a few more technologies listed below.
+This application is built with real-world business specifications. It is an app for a Germany fictional company *Magic Books Inc*. The application helps organize and manage the company's bookstore. It is a fast, dynamic app built with ReactJs and a few more technologies listed below.
 
 ## Technologies used:
 > technologies used in building this project include but are not limited to: 
@@ -14,7 +14,7 @@ This application is built with real-world business specifications. It an app for
 [MagicBooks.Inc](https://magicbooks-inc.herokuapp.com/)
 
 ## Project Design
-![BookStore](./demo/projectdemo.gif)
+![BookStore]()
 
 ## Project SetUp
 You can clone the project on your local machine by running:
