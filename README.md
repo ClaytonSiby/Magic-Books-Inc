@@ -1,10 +1,6 @@
-# The React Calculator
+# Magic Books Inc
 
-This calculator project is a web application responsive on desktop only, it is built using the React Library. You can do some basic math calculations such that include:
-- addition & subtraction
-- division & multiplication
-- math with negative & positive values
-- convert numbers to percentage values.
+This application is built with real-world business specifications. It an app for a Germany fictional company *Magic Books Inc*, the application helps organize and manage the company's bookstore. It is a fast, dynamic app built with ReactJs and a few more technologies listed below.
 
 ## Technologies used:
 > technologies used in building this project include but are not limited to: 
@@ -15,14 +11,14 @@ This calculator project is a web application responsive on desktop only, it is b
 - buildpack
 
 ## live Demo
-[The Calculator](https://the-react-calculator.herokuapp.com/)
+[The Calculator](https://magicbooks-inc.herokuapp.com/)
 
 ## Project Design
 ![Calculator](./demo/projectdemo.gif)
 
 ## Project SetUp
 You can clone the project on your local machine by running:
-- `git clone https://github.com/ClaytonSiby/The_Calculator.git`
+- `git clone https://github.com/ClaytonSiby/Magic-Books-Inc.git`
 then:
 -  `cd The_Calculator`
 
@@ -45,7 +41,7 @@ then:
 
 ## :handshake: Contributing 
 
-* Contributions, issues and feature requests are welcome! Feel free to check the [issues page](https://github.com/ClaytonSiby/The_Calculator.git/issues)
+* Contributions, issues and feature requests are welcome! Feel free to check the [issues page](https://github.com/ClaytonSiby/Magic-Books-Inc.git/issues)
 - To contribute to this project:
 - Fork this repository & clone locally.
 - Create an upstream remote and sync your local copy.
