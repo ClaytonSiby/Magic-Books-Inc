@@ -11,10 +11,10 @@ This application is built with real-world business specifications. It an app for
 - buildpack
 
 ## live Demo
-[The Calculator](https://magicbooks-inc.herokuapp.com/)
+[MagicBooks.Inc](https://magicbooks-inc.herokuapp.com/)
 
 ## Project Design
-![Calculator](./demo/projectdemo.gif)
+![BookStore](./demo/projectdemo.gif)
 
 ## Project SetUp
 You can clone the project on your local machine by running:
