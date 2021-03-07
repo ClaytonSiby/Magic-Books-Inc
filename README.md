@@ -13,8 +13,6 @@ This application is built with real-world business specifications. It is an app 
 ## live Demo
 [MagicBooks.Inc](https://magicbooks-inc.herokuapp.com/)
 
-## Project Design
-![BookStore]()
 
 ## Project SetUp
 You can clone the project on your local machine by running:
@@ -26,7 +24,7 @@ then:
 - `npm install`
 
 - you can view the project live by runnig `yarn start`
-- for production release/deployment run `npm run build` to bundle a minified version of the code.
+- for production release/deployment run `yarn run build` to bundle a minified version of the code.
 
 ## Author 
 
@@ -35,9 +33,9 @@ then:
 
 - Github: [@ClaytonSiby](https://github.com/ClaytonSiby)
    
-- Linkedin: [Linkedin Profile](https://www.linkedin.com/in/clayton-siby-48a8a0183/)
+- Linkedin: [Clayton Siby](https://www.linkedin.com/in/clayton-siby-48a8a0183/)
 
-- Twitter: [@Twitter](https://twitter.com/ClaytonSiby)
+- Twitter: [@ClaytonSiby](https://twitter.com/ClaytonSiby)
 
 ## :handshake: Contributing 
 
