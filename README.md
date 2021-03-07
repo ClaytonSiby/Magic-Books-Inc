@@ -6,10 +6,12 @@ This application is built with real-world business specifications. It is an app 
 > technologies used in building this project include but are not limited to: 
 - EcmaScript 6
 - webpack
-- big.js
 - reactJS
 - buildpack
-
+- redux
+- react-redux
+- eslint
+- stylelint
 ## live Demo
 [MagicBooks.Inc](https://magicbooks-inc.herokuapp.com/)
 
@@ -21,10 +23,10 @@ then:
 -  `cd The_Calculator`
 
 ### install all dependencies by running:
-- `npm install`
+- `yarn install`
 
 - you can view the project live by runnig `yarn start`
-- for production release/deployment run `yarn run build` to bundle a minified version of the code.
+- for production release/deployment run `yarn build` to bundle a minified version of the code.
 
 ## Author 
 
