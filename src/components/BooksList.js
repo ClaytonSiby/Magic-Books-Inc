@@ -10,12 +10,16 @@ const BooksList = () => {
                 <tr>Category</tr>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
             </tr>
         </table>
     )
 }
 
-export default connect(BooksList)
+const mapStateToProps = state => {
+    state
+}
+
+export default connect(mapStateToProps)(BooksList)
