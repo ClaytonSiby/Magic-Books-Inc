@@ -22,3 +22,12 @@ MileStone 2:
     - Create the initial state object in src/index.js. It may contain just a few books with different titles and categories.
     - Each book in the initial state should have a unique ID. However, we'll cheat here and implement that functionality by using a Math.random function.
     - Render the <App /> component wrapped in <Provider> and pass the store down to the component.
+
+  9) Define Redux actions and reducers:
+    - Implement books.js reducer with CREATE_BOOK and REMOVE_BOOK actions, remember state can not be mutated!
+    - Define the CREATE_BOOK and REMOVE_BOOK actions in actions/index.js. They should accept book object as an argument.
+
+  10) Implement BookList component:
+    - It should display the books as an html table
+    - each row should contain Book Id, title and category.
+    - It should connect to the Redux store and fetch books from the state.
