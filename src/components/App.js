@@ -1,12 +1,11 @@
-import BooksList from './BooksList';
-import BooksForm from './BooksForm';
+// import BooksList from './BooksList';
+// import BooksForm from './BooksForm';
 import '../assets/App.css';
 
 function App() {
   return (
     <div className="App">
-      <BooksList />
-      <BooksForm />
+      <h2>Hello World</h2>
     </div>
   );
 }
