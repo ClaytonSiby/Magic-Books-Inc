@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const BooksForm = () => {
   const categories = [
@@ -8,16 +8,16 @@ const BooksForm = () => {
     'Horror',
     'Kids',
     'Learning',
-    'Sci-Fi'
-  ]
+    'Sci-Fi',
+  ];
   return (
     <div>
       <form>
-        <div className='form-group'>
-          <input type='text' placeholder='Book Title Here' />
+        <div className="form-group">
+          <input type="text" placeholder="Book Title Here" />
         </div>
-        <div className='form-group'>
-          <select className='form-control'>
+        <div className="form-group">
+          <select className="form-control">
             {categories.map(category => (
               <option value={category} key={Math.random() * category.length}>
                 {category}
@@ -25,12 +25,12 @@ const BooksForm = () => {
             ))}
           </select>
         </div>
-        <div className='form-group'>
-          <button>Add New Book</button>
+        <div className="form-group">
+          <button type="button">Add New Book</button>
         </div>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default BooksForm
+export default BooksForm;
