@@ -18,11 +18,11 @@ const BooksForm = () => {
         </div>
         <div className='form-group'>
           <select className='form-control'>
-            {
-                categories.forEach(category => (
-                    <option value={category} key={Math.random() * category.length}></option>
-                ))
-            }
+            {categories.map(category => (
+              <option value={category} key={Math.random() * category.length}>
+                {category}
+              </option>
+            ))}
           </select>
         </div>
         <div className='form-group'>

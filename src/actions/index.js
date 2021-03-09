@@ -4,14 +4,14 @@ const REMOVE_BOOK = 'REMOVE_BOOK'
 const createBook = book => {
   return {
     type: CREATE_BOOK,
-    book
+    payload: book
   }
 }
 
 const removeBook = book => {
   return {
     type: REMOVE_BOOK,
-    book
+    payload: book.id
   }
 }
 
