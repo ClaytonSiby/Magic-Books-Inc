@@ -27,10 +27,19 @@ form {
   width: 100%;
 }
 
-input[type=text],
+input[type=text] {
+  width: 14rem;
+  padding: 0.4rem;
+  margin: 0.7rem 0;
+}
+
 .submit,
 select {
   width: 15rem;
   padding: 0.4rem;
   margin: 0.7rem 0;
+}
+
+.submit:hover {
+  cursor: pointer;
 }
