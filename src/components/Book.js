@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Book = ({ book }) => (
+const Book = ({  id, title, category} ) => (
   <tr>
     <td>
       {' '}
-      {book.id}
+      {id}
       {' '}
     </td>
     <td>
       {' '}
-      {book.title}
+      {title}
       {' '}
     </td>
     <td>
       {' '}
-      {book.category}
+      {category}
       {' '}
     </td>
   </tr>
