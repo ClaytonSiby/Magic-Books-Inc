@@ -39,7 +39,7 @@ const BooksForm = props => {
       alertMsg.style.color = 'red';
     }
 
-    setTimeout(() => alertMsg.textContent = '', 2000);
+    setTimeout(() => { alertMsg.textContent = ''; }, 2000);
   };
 
   return (
