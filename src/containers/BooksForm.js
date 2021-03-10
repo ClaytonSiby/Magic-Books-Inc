@@ -6,6 +6,7 @@ import { createBook, removeBook } from '../actions/index';
 const BooksForm = props => {
   const [book, setBook] = useState({ title: '', category: '' });
   const categories = [
+    'Select Category',
     'Action',
     'Biography',
     'History',
@@ -20,19 +21,27 @@ const BooksForm = props => {
   const handleSubmit = e => {
     e.preventDefault();
     const { title, category } = book;
+    const alertMsg = document.querySelector('.alertMessage');
     const newBookObject = {
       id: Math.floor(Math.random() * 100),
       title,
       category,
     };
 
-    props.createBook(newBookObject);
-    book.title = '';
-    book.category = '';
+    if (newBookObject.title && newBookObject.category) {
+      props.createBook(newBookObject);
+      alertMsg.textContent = '';
+      book.title = '';
+      book.category = '';
+    } else {
+      alertMsg.textContent = 'Fill in the title and category to continue!';
+      alertMsg.style.color = 'red';
+    }
   };
 
   return (
     <div>
+      <p className="alertMessage" />
       <form>
         <div className="form-group">
           <input
