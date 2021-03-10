@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Book from '../components/Book';
 
 const BooksList = ({ books }) => (
-  <div className="App">
+  <div>
     <h2>Books List here!</h2>
     <table>
       <thead>

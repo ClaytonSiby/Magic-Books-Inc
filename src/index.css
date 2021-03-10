@@ -14,14 +14,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)), url('./assets/main-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
