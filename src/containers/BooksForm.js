@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { createBook, removeBook } from '../actions/index';
+import { createBook } from '../actions/index';
 
 const BooksForm = props => {
   const [book, setBook] = useState({ title: '', category: '' });
@@ -79,7 +79,6 @@ const BooksForm = props => {
 
 const mapDispatchToProps = dispatch => ({
   createBook: data => dispatch(createBook(data)),
-  removeBook: book => dispatch(removeBook(book)),
 });
 
 BooksForm.propTypes = {
