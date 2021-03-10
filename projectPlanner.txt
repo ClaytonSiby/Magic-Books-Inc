@@ -1,0 +1,33 @@
+MileStone 2:
+
+- Prepare the directory structure:
+  
+  1) Create components directory in the src folder for all the presentational components.
+  2) Create containers directory in the src folder for all the container components.
+  3) Create a actions directory with the index.js file where you'll define all the Redux actions.
+  4) Create a reducers directory with two files: book.js and index.js. The former will store the functions responsible for actions on Books, and combine all the reducers into one later during development.
+  5) Implement the App component:
+    - It should only wrap BookList and BooksForm in a div selector and display it.
+    - Attach this component to render the function in the main index.js file.
+
+  6) Implement the Book components.
+    - It should accept a book object as prop.
+    - It should represent a single row in the Books table.
+
+  7) Implement the BooksForm component.
+    - It should render a very simple form for adding books. The form should contain a book title input, a select box with categories and a submit button.
+    - Define a constant with a collection containing the book categories: [ 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+
+  8) Initialize the Redux store:
+    - Create the initial state object in src/index.js. It may contain just a few books with different titles and categories.
+    - Each book in the initial state should have a unique ID. However, we'll cheat here and implement that functionality by using a Math.random function.
+    - Render the <App /> component wrapped in <Provider> and pass the store down to the component.
+
+  9) Define Redux actions and reducers:
+    - Implement books.js reducer with CREATE_BOOK and REMOVE_BOOK actions, remember state can not be mutated!
+    - Define the CREATE_BOOK and REMOVE_BOOK actions in actions/index.js. They should accept book object as an argument.
+
+  10) Implement BookList component:
+    - It should display the books as an html table
+    - each row should contain Book Id, title and category.
+    - It should connect to the Redux store and fetch books from the state.

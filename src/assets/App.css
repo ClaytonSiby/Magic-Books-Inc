@@ -1,0 +1,45 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 991px;
+  margin: 2rem auto;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 9px;
+}
+
+form {
+  width: 100%;
+}
+
+input[type=text] {
+  width: 14rem;
+  padding: 0.4rem;
+  margin: 0.7rem 0;
+}
+
+.submit,
+select {
+  width: 15rem;
+  padding: 0.4rem;
+  margin: 0.7rem 0;
+}
+
+.submit:hover {
+  cursor: pointer;
+}
