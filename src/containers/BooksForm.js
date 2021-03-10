@@ -30,13 +30,16 @@ const BooksForm = props => {
 
     if (newBookObject.title && newBookObject.category) {
       props.createBook(newBookObject);
-      alertMsg.textContent = '';
+      alertMsg.textContent = 'Book successfully added to list!';
+      alertMsg.style.color = 'green';
       book.title = '';
       book.category = '';
     } else {
       alertMsg.textContent = 'Fill in the title and category to continue!';
       alertMsg.style.color = 'red';
     }
+
+    setTimeout(() => alertMsg.textContent = '', 2000);
   };
 
   return (
