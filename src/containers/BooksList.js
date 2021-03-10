@@ -17,7 +17,7 @@ const BooksList = ({ books }) => (
       <tbody>
         {
             books.map(book => (
-              <Book book={book} key={book.id} />
+              <Book book={book} key={ book.id } />
             ))
           }
       </tbody>
