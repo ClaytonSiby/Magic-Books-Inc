@@ -26,7 +26,7 @@ const BooksForm = () => {
           </select>
         </div>
         <div className="form-group">
-          <button type="button">Add New Book</button>
+          <button type="submit" className="submit">Add New Book</button>
         </div>
       </form>
     </div>

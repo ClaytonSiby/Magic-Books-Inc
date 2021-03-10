@@ -22,3 +22,15 @@ th {
   text-align: left;
   padding: 9px;
 }
+
+form {
+  width: 100%;
+}
+
+input[type=text],
+.submit,
+select {
+  width: 15rem;
+  padding: 0.4rem;
+  margin: 0.7rem 0;
+}
