@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { createBook } from '../actions/index';
 
-const BooksForm = () => {
+const BooksForm = props => {
+  const [book, setBook] = useState({ title: '', category: '' });
   const categories = [
+    'Select Category',
     'Action',
     'Biography',
     'History',
@@ -10,14 +15,54 @@ const BooksForm = () => {
     'Learning',
     'Sci-Fi',
   ];
+
+  const handleChange = e => setBook({ ...book, [e.currentTarget.name]: e.target.value });
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    const { title, category } = book;
+    const alertMsg = document.querySelector('.alertMessage');
+    const newBookObject = {
+      id: Math.floor(Math.random() * 100),
+      title,
+      category,
+    };
+
+    if (newBookObject.title && newBookObject.category) {
+      props.createBook(newBookObject);
+      alertMsg.textContent = 'Book successfully added to list!';
+      alertMsg.style.color = 'green';
+      book.title = '';
+      book.category = '';
+    } else {
+      alertMsg.textContent = 'Fill in the title and category to continue!';
+      alertMsg.style.color = 'red';
+    }
+
+    setTimeout(() => { alertMsg.textContent = ''; }, 2000);
+  };
+
   return (
     <div>
+      <p className="alertMessage" />
       <form>
         <div className="form-group">
-          <input type="text" placeholder="Book Title Here" />
+          <input
+            type="text"
+            className="bookTitle"
+            name="title"
+            value={book.title}
+            onChange={handleChange}
+            placeholder="Book Title Here"
+          />
         </div>
         <div className="form-group">
-          <select className="form-control">
+          <select
+            className="selectCategory"
+            name="category"
+            value={book.category}
+            onChange={handleChange}
+          >
             {categories.map(category => (
               <option value={category} key={Math.random() * category.length}>
                 {category}
@@ -26,11 +71,21 @@ const BooksForm = () => {
           </select>
         </div>
         <div className="form-group">
-          <button type="submit" className="submit">Add New Book</button>
+          <button type="submit" className="submit" onClick={handleSubmit}>
+            Add New Book
+          </button>
         </div>
       </form>
     </div>
   );
 };
 
-export default BooksForm;
+const mapDispatchToProps = dispatch => ({
+  createBook: data => dispatch(createBook(data)),
+});
+
+BooksForm.propTypes = {
+  createBook: PropTypes.func.isRequired,
+};
+
+export default connect(null, mapDispatchToProps)(BooksForm);
