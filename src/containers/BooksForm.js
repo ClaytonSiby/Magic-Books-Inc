@@ -2,19 +2,10 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createBook } from '../actions/index';
+import { CATEGORIES } from '../components/CategoryFilter';
 
 const BooksForm = props => {
   const [book, setBook] = useState({ title: '', category: '' });
-  const categories = [
-    'Select Category',
-    'Action',
-    'Biography',
-    'History',
-    'Horror',
-    'Kids',
-    'Learning',
-    'Sci-Fi',
-  ];
 
   const handleChange = e => setBook({ ...book, [e.currentTarget.name]: e.target.value });
 
@@ -63,7 +54,7 @@ const BooksForm = props => {
             value={book.category}
             onChange={handleChange}
           >
-            {categories.map(category => (
+            {CATEGORIES.map(category => (
               <option value={category} key={Math.random() * category.length}>
                 {category}
               </option>
