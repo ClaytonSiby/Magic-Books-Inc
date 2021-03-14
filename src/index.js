@@ -28,7 +28,7 @@ const booksData = {
     },
   ],
 
-  filter: 'All'
+  filter: 'All',
 };
 
 const store = createStore(rootReducer, booksData);

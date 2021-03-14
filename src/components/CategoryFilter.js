@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const CATEGORIES = [
   'Select Category',
@@ -10,18 +11,21 @@ export const CATEGORIES = [
   'Kids',
   'Learning',
   'Sci-Fi',
-]
+];
 
-const CategoryFilter = ({ changeFilter }) => {
-  return (
-    <select name="filter" onChange={ changeFilter }>
-      {CATEGORIES.map(category => (
-        <option value={category} key={Math.random() * category.length}>
-          {category}{' '}
-        </option>
-      ))}
-    </select>
-  )
-}
+const CategoryFilter = ({ changeFilter }) => (
+  <select name="filter" onChange={changeFilter}>
+    {CATEGORIES.map(category => (
+      <option value={category} key={Math.random() * category.length}>
+        {category}
+        {' '}
+      </option>
+    ))}
+  </select>
+);
 
-export default CategoryFilter
+CategoryFilter.propTypes = {
+  changeFilter: PropTypes.func.isRequired,
+};
+
+export default CategoryFilter;
