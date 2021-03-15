@@ -36,8 +36,8 @@ const Book = ({ id, title, category, removeBook }) => (
       <p className={ styles.Overal2 }></p>
       <br />
       <div>
-        <p className='percent-Complete'>60%</p>
-        <p className='completed'>complete</p>
+        <p className={styles.percentageComplete}>60%</p>
+        <p className={styles.complete}>complete</p>
       </div>
     </div>
     <div className='chapter-Info'>
