@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createBook } from '../actions/index';
 import { CATEGORIES } from '../components/CategoryFilter';
+import styles from '../assets/booksform.module.css';
 
 const BooksForm = props => {
   const [book, setBook] = useState({ title: '', category: '' });
@@ -62,7 +63,7 @@ const BooksForm = props => {
           </select>
         </div>
         <div className="form-group">
-          <button type="submit" className="submit" onClick={handleSubmit}>
+          <button type="submit" className={ styles.button} onClick={handleSubmit}>
             Add New Book
           </button>
         </div>
