@@ -23,7 +23,7 @@ const BooksList = ({ books, filter, removeBook, handleFilterBook }) => {
         </div>
 
         <div>
-          <span>Categories: </span>
+          <span className={ styles.selectCategory }>Categories: </span>
           <CategoryFilter changeFilter={handleFilterBook} />
         </div>
       </nav>
