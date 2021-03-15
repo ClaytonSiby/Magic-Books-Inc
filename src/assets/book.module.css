@@ -1,17 +1,19 @@
 .lessonPanel {
-    display: flex;
-    justify-content: space-between;
-    background: #fff;
-    color: #000;
-    margin: .7rem 0;
-    padding: 1rem;
-    border-radius: .5rem;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  color: #000;
+  margin: 0.7rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 .actionBtn {
-    color: blue;
+  color: blue;
+  border: none;
+  background: #fff;
 }
 
 .actionBtn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
