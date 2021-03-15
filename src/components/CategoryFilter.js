@@ -16,7 +16,7 @@ export const CATEGORIES = [
 const CategoryFilter = ({ changeFilter }) => (
   <select name="filter" onChange={changeFilter}>
     {CATEGORIES.map(category => (
-      <option value={category} key={Math.random() * category.length}>
+      <option className="option" value={category} key={Math.random() * category.length}>
         {category}
         {' '}
       </option>

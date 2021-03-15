@@ -22,7 +22,6 @@ const BooksList = ({
       <h2>Books List here!</h2>
       <CategoryFilter changeFilter={handleFilterBook} />
       <div className="panel-bg">
-
           { filterBooks(books).map(book => (
             <Book
               id={book.id}
@@ -32,7 +31,6 @@ const BooksList = ({
               removeBook={handleRemoveBook}
             />
           ))}
-
       </div>
     </div>
   );

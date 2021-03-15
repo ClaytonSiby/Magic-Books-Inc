@@ -1,8 +1,9 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import styles from '../assets/book.module.css';
 
 const Book = ({ id, title, category, removeBook }) => (
-  <div className='Lesson-Panel'>
+  <div className={ `${styles.lessonPanel}`}>
     <div className="Book-Header">
       <div className='School-of'>
         <p>{category}</p>
@@ -14,18 +15,23 @@ const Book = ({ id, title, category, removeBook }) => (
         <p>Suzane Collins</p>
       </div>
       <div className='actions'>
-        <button
-          type='button'
+        <span className={ `${ styles.actionBtn }`}>Comments</span>&nbsp;| &nbsp;
+        <span className={ `${ styles.actionBtn }`}
           onClick={() => removeBook({ id, title, category })}
         >
           Remove Book
-        </button>
+        </span>&nbsp; | &nbsp;
+        <span className={ `${ styles.actionBtn }`}>Edit</span>
       </div>
     </div>
     <div className="progress-report">
         <div className="Oval-2"></div>
         <p className="percent-Complete"></p>
         <p className="completed">complete</p>
+    </div>
+    <div className="chapter-Info">
+      <p className="current-Chapter">CURRENT CHAPTER</p>
+      <p className="current-Lesson"></p>
     </div>
   </div>
 )

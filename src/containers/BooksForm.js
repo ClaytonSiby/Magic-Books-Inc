@@ -55,7 +55,7 @@ const BooksForm = props => {
             onChange={handleChange}
           >
             {CATEGORIES.map(category => (
-              <option value={category} key={Math.random() * category.length}>
+              <option className="option" value={category} key={Math.random() * category.length}>
                 {category}
               </option>
             ))}

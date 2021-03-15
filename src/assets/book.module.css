@@ -1,0 +1,17 @@
+.lessonPanel {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    color: #000;
+    margin: .7rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.actionBtn {
+    color: blue;
+}
+
+.actionBtn:hover {
+    cursor: pointer;
+}
