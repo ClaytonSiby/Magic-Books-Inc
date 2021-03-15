@@ -21,16 +21,8 @@ const BooksList = ({
     <div>
       <h2>Books List here!</h2>
       <CategoryFilter changeFilter={handleFilterBook} />
-      <table>
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
+      <div className="panel-bg">
+
           { filterBooks(books).map(book => (
             <Book
               id={book.id}
@@ -40,8 +32,8 @@ const BooksList = ({
               removeBook={handleRemoveBook}
             />
           ))}
-        </tbody>
-      </table>
+
+      </div>
     </div>
   );
 };
