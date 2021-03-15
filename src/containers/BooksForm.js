@@ -49,6 +49,7 @@ const BooksForm = props => {
           />
         </div>
         <div className="form-group">
+          <p />
           <select
             className="selectCategory"
             name="category"
