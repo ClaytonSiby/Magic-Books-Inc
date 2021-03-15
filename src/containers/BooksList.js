@@ -19,8 +19,12 @@ const BooksList = ({
 
   return (
     <div>
-      <h2>Books List here!</h2>
-      <CategoryFilter changeFilter={handleFilterBook} />
+      <nav>
+        <h2>BookStore CMS</h2>
+        <h3>Categories: </h3>
+        <CategoryFilter changeFilter={handleFilterBook} />
+      </nav>
+      
       <div className="panel-bg">
         { filterBooks(books).map(book => (
           <Book
