@@ -3,7 +3,8 @@
 	--dodger-blue: #379cf6;
 	--white-two: #ffffff;
 	--azure: #0290ff;
-    --black-two: #000;
+	--black-two: #000;
+    --cool-blue: #4386bf;
 }
 
 .lessonPanel {
@@ -17,10 +18,63 @@
 	border: solid 1px #e8e8e8;
 }
 
+.category {
+	width: 49px;
+	height: 18px;
+	margin: 0 39px 0 0;
+	opacity: 0.5;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: var(--black-two);
+}
+
+.title {
+	width: 197px;
+	height: 29px;
+	/* margin: 3px 323px 0 0; */
+	font-family: RobotoSlab;
+	font-size: 19px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: -0.2px;
+	color: var(--black-two);
+}
+
+.author {
+	width: 107px;
+	height: 19px;
+	margin: 0;
+	font-family: RobotoSlab;
+	font-size: 16px;
+	font-weight: 300;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: var(--cool-blue);
+}
+
 .actionBtn {
-	color: var(--medium-blue);
-	border: none;
-	background: #fff;
+    height: 19px;
+    /* margin: 3px 15px 2px 0; */
+    margin: 1.4rem 0;
+    font-family: RobotoSlab;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--cool-blue);
+    border: none;
+    background: #fff;
 }
 
 .actionBtn:hover {
@@ -67,34 +121,42 @@
 }
 
 .currentLesson {
-    width: 212px;
-    height: 21px;
-    padding: 0 2rem;
+	width: 212px;
+	height: 21px;
+	margin: 7px 0 4px 59px;
+	font-family: RobotoSlab;
+	font-size: 16px;
+	font-weight: 300;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: -0.1px;
+	color: var(--black-two);
 }
 
 .percentageComplete {
-    margin: 1px 92px 0 11px;
-    font-family: Montserrat;
-    font-size: 32px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: var(--black-two);
+	margin: 1px 92px 0 11px;
+	font-family: Montserrat;
+	font-size: 32px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: var(--black-two);
 }
 
 .complete {
-    width: 80px;
-    height: 18px;
-    margin: 7px 79px 12px 12px;
-    opacity: 0.5;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: var(--black-two);
+	width: 80px;
+	height: 18px;
+	margin: 7px 79px 12px 12px;
+	opacity: 0.5;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: var(--black-two);
 }
