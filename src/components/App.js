@@ -1,14 +1,14 @@
-import BooksList from '../containers/BooksList'
-import BooksForm from '../containers/BooksForm'
-import '../assets/App.css'
+import BooksList from '../containers/BooksList';
+import BooksForm from '../containers/BooksForm';
+import '../assets/App.css';
 
-function App () {
+function App() {
   return (
-    <div className='App'>
+    <div className="App">
       <BooksList />
       <BooksForm />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

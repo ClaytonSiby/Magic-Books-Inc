@@ -63,7 +63,7 @@ const BooksForm = props => {
           </select>
         </div>
         <div className="form-group">
-          <button type="submit" className={ styles.button} onClick={handleSubmit}>
+          <button type="submit" className={styles.button} onClick={handleSubmit}>
             Add New Book
           </button>
         </div>
