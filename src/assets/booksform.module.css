@@ -1,0 +1,10 @@
+.button {
+  width: 184px;
+  height: 33px;
+  margin: 0.7rem 1rem 1rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: var(--azure);
+  border: none;
+  color: var(--white-two);
+}

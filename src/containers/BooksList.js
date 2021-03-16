@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
 import { removeBook, changeFilter } from '../actions/index';
+import styles from '../assets/bookslist.module.css';
 
 import CategoryFilter from '../components/CategoryFilter';
 
@@ -13,35 +14,32 @@ const BooksList = ({
     removeBook(book);
   };
 
-  const filterBooks = books => (filter === 'All'
-    ? books
-    : books.filter(book => book.category === filter));
+  const filterBooks = books => (filter === 'All' ? books : books.filter(book => book.category === filter));
 
   return (
     <div>
-      <h2>Books List here!</h2>
-      <CategoryFilter changeFilter={handleFilterBook} />
-      <table>
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          { filterBooks(books).map(book => (
-            <Book
-              id={book.id}
-              title={book.title}
-              category={book.category}
-              key={book.id}
-              removeBook={handleRemoveBook}
-            />
-          ))}
-        </tbody>
-      </table>
+      <nav>
+        <div>
+          <h2 className={styles.bookStoreCMS}>BookStore CMS</h2>
+        </div>
+
+        <div>
+          <span className={styles.selectCategory}>Categories: </span>
+          <CategoryFilter changeFilter={handleFilterBook} />
+        </div>
+      </nav>
+
+      <div className="panel-bg">
+        {filterBooks(books).map(book => (
+          <Book
+            id={book.id}
+            title={book.title}
+            category={book.category}
+            key={book.id}
+            removeBook={handleRemoveBook}
+          />
+        ))}
+      </div>
     </div>
   );
 };

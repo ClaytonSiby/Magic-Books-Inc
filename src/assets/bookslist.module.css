@@ -1,0 +1,26 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 0 1.2rem;
+}
+
+.bookStoreCMS {
+  /* margin: 6px 47px 2px 0; */
+  margin: 0.5rem 0 0 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--azure);
+}
+
+.selectCategory {
+  color: var(--azure);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}

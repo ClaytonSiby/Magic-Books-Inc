@@ -1,0 +1,163 @@
+:root {
+  --medium-blue: #307bbe;
+  --dodger-blue: #379cf6;
+  --white-two: #fff;
+  --azure: #0290ff;
+  --black-two: #000;
+  --cool-blue: #4386bf;
+}
+
+.lessonPanel {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  color: #000;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: solid 1px #e8e8e8;
+}
+
+.category {
+  width: 49px;
+  height: 18px;
+  margin: 0 39px 0 0;
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.title {
+  width: 197px;
+  height: 29px;
+
+  /* margin: 3px 323px 0 0; */
+  font-family: RobotoSlab, serif;
+  font-size: 19px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: var(--black-two);
+}
+
+.author {
+  width: 107px;
+  height: 19px;
+  margin: 0;
+  font-family: RobotoSlab, serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--cool-blue);
+}
+
+.actionBtn {
+  height: 19px;
+
+  /* margin: 3px 15px 2px 0; */
+  margin: 1.4rem 0;
+  font-family: RobotoSlab, serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--cool-blue);
+  border: none;
+  background: #fff;
+}
+
+.actionBtn:hover {
+  cursor: pointer;
+}
+
+.currentChapter {
+  margin: 1px 58px 0 59px;
+  opacity: 0.5;
+  font-family: RobotoSlab, serif;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Overal2 {
+  width: 40px;
+  height: 40px;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-right: 10px solid var(--medium-blue);
+  border-bottom: 10px solid var(--medium-blue);
+  margin: 1.2rem 0.7rem;
+}
+
+.button {
+  width: 184px;
+  height: 33px;
+  margin: 1rem;
+  padding: 7px 19px 8px 22px;
+  border-radius: 5px;
+  background-color: var(--azure);
+  border: none;
+  color: var(--white-two);
+}
+
+.progressReport {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.currentLesson {
+  width: 212px;
+  height: 21px;
+  margin: 7px 0 4px 59px;
+  font-family: RobotoSlab, serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.1px;
+  color: var(--black-two);
+}
+
+.percentageComplete {
+  margin: 1px 92px 0 11px;
+  font-family: Montserrat, sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.complete {
+  width: 80px;
+  height: 18px;
+  margin: 7px 79px 12px 12px;
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}

@@ -12,9 +12,12 @@ This application is built with real-world business specifications. It is an app 
 - react-redux
 - eslint
 - stylelint
+
 ## live Demo
 [MagicBooks.Inc](https://magicbooks-inc.herokuapp.com/)
 
+## Project Design
+![BookStoreCMS](./demo/projectdemo.gif)
 
 ## Project SetUp
 You can clone the project on your local machine by running:
